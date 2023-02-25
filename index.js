@@ -85,7 +85,7 @@ app.patch("/details",async (req,res)=>{
 
 app.listen(process.env.PORT,async ()=>{
     try {
-        // await connection
+        await connection
         console.log("Connected to db")
     } catch (error) {
         console.log(error)
